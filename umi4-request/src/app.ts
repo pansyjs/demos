@@ -15,6 +15,7 @@ proxy({
         response: {
           errorCode: 0,
           errorMessage: 'OK',
+          success: true,
           data: 'Tom',
         }
       })
@@ -30,7 +31,8 @@ proxy({
         },
         response: {
           errorCode: 400100,
-          errorMessage: '用户不存在'
+          errorMessage: '用户不存在',
+          success: false,
         }
       })
       return;
@@ -86,7 +88,6 @@ export const request: RequestConfig = {
       }
     },
     errorThrower(res) {
-      console.log(res);
       const { data, errorCode, errorMessage, showType } = res;
 
       if (errorCode !== 0) {
