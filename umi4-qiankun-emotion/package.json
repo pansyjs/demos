@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pnpm run -r start"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

@@ -2,8 +2,15 @@ import { css } from '@emotion/react';
 
 const useStyle = () => {
   return {
-    container: css`
+    header: css`
       background: green;
+    `,
+    button: css`
+      color: #090890;
+
+      &:hover {
+        color: red;
+      }
     `
   }
 }
@@ -12,8 +19,14 @@ export default () => {
   const style = useStyle();
 
   return (
-    <div css={style.container}>
-       dashboard
+    <div>
+      <div css={style.header}>
+        dashboard
+      </div>
+      <br />
+      <button css={style.button}>
+        button
+      </button>
     </div>
   )
 }
