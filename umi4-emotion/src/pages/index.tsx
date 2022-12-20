@@ -1,23 +1,10 @@
-import { css } from '@emotion/react';
-
-const useStyle = () => {
-  return {
-    container: css`
-      background-color: hotpink;
-      &:hover {
-        color: 'darkgreen';
-      }
-    `
-  }
-}
+import { useStyle } from './useStyle';
 
 export default () => {
   const { container } = useStyle();
 
   return (
-    <div
-      css={container}
-    >
+    <div css={container}>
       123
     </div>
   )
