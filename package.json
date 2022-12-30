@@ -1,5 +1,8 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.4"
   }
 }
