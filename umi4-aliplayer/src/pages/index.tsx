@@ -40,15 +40,18 @@ export default () => {
     modal.open(source);
   }
 
-  return sources.map((source, key) => {
+  const players = sources.map((source, key) => {
     return (
-      <>
-        <Card title={`标题${key + 1}`} key={key}>
-          <Button onClick={() => { handleClick(source) }}>Open Modal</Button>
-        </Card>
-
-        <PlayerModal modal={modal} />
-      </>
+      <Card title={`标题${key + 1}`} key={key}>
+        <Button onClick={() => { handleClick(source) }}>Open Modal</Button>
+      </Card>
     )
   })
+
+  return (
+    <>
+      {players}
+      <PlayerModal modal={modal} />
+    </>
+  )
 }
