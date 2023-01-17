@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@pansy/react-aliplayer': ^1.3.0
+  '@pansy/react-hooks': ^1.0.3
   '@types/react': ^18.0.26
   '@types/react-dom': ^18.0.10
   '@umijs/max': ^4.0.46
@@ -11,6 +12,7 @@ specifiers:
 
 dependencies:
   '@pansy/react-aliplayer': 1.3.0_biqbaboplfbrettd7655fr4n2y
+  '@pansy/react-hooks': 1.0.3_react@18.2.0
   '@umijs/max': 4.0.46_ie75ejlwqy5zh3tldgt7pftwcu
   antd: 5.1.5_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -2605,6 +2607,19 @@ packages:
       fastq: 1.14.0
     dev: false
 
+  /@pansy/hook-utils/0.5.0_react@18.2.0:
+    resolution: {integrity: sha512-cBkYjPDkt6WU7K7DxndRudU2uINnLc60xaigj0xu8mNJIHH9AwDUNh7sbsN86bfYnP6hPqyRBNUcZBkAkkOONw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      '@pansy/use-update-effect': 0.2.5_react@18.2.0
+      lodash: 4.17.21
+      react: 18.2.0
+    dev: false
+
   /@pansy/react-aliplayer/1.3.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-qMDGkfK6pO9o2Nro8I6pUIsaOAILGZZutoV8qLMNx+XKVqGpkA/Yi6Urq63LaQo/c/iV8zyVn1orI/+d8/lTeQ==}
     peerDependencies:
@@ -2613,6 +2628,506 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@pansy/react-hooks/1.0.3_react@18.2.0:
+    resolution: {integrity: sha512-2rtR1ov/3xSqtSKi2V+U2HTmmchvDtVqbSwabHvDkenGgy0FgB6o0FvjEKFv9gfhdLbFABva8g2T+xIM6Sj4cQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-boolean': 0.3.0_react@18.2.0
+      '@pansy/use-click-away': 0.4.0_react@18.2.0
+      '@pansy/use-controllable-value': 0.4.0_react@18.2.0
+      '@pansy/use-cookie-state': 0.2.1_react@18.2.0
+      '@pansy/use-creation': 0.2.1_react@18.2.0
+      '@pansy/use-deep-compare-effect': 1.3.1_react@18.2.0
+      '@pansy/use-deep-compare-layout-effect': 1.1.0_react@18.2.0
+      '@pansy/use-document-visibility': 0.3.1_react@18.2.0
+      '@pansy/use-event-listener': 0.3.1_react@18.2.0
+      '@pansy/use-event-target': 0.2.6_react@18.2.0
+      '@pansy/use-external': 0.1.5_react@18.2.0
+      '@pansy/use-favicon': 0.2.5_react@18.2.0
+      '@pansy/use-get-state': 0.3.0_react@18.2.0
+      '@pansy/use-hover': 0.4.0_react@18.2.0
+      '@pansy/use-in-viewport': 0.4.0_react@18.2.0
+      '@pansy/use-interval': 0.3.0_react@18.2.0
+      '@pansy/use-key-press': 0.3.0_react@18.2.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      '@pansy/use-local-storage-state': 0.3.1_react@18.2.0
+      '@pansy/use-lock-fn': 1.0.6_react@18.2.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@pansy/use-modal': 1.0.1_react@18.2.0
+      '@pansy/use-mount': 0.2.0_react@18.2.0
+      '@pansy/use-mouse': 0.3.0_react@18.2.0
+      '@pansy/use-mqtt': 0.4.0_react@18.2.0
+      '@pansy/use-portal': 0.2.1_react@18.2.0
+      '@pansy/use-previous': 0.2.5_react@18.2.0
+      '@pansy/use-raf-state': 0.2.6_react@18.2.0
+      '@pansy/use-request': 0.3.0_react@18.2.0
+      '@pansy/use-scroll': 0.3.1_react@18.2.0
+      '@pansy/use-scroll-lock': 1.3.0_react@18.2.0
+      '@pansy/use-selections': 0.4.0_react@18.2.0
+      '@pansy/use-session-storage-state': 0.3.1_react@18.2.0
+      '@pansy/use-size': 0.3.1_react@18.2.0
+      '@pansy/use-timeout': 0.2.6_react@18.2.0
+      '@pansy/use-title': 0.3.1_react@18.2.0
+      '@pansy/use-toggle': 0.2.5_react@18.2.0
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      '@pansy/use-update': 0.2.5_react@18.2.0
+      '@pansy/use-update-effect': 0.2.5_react@18.2.0
+      '@pansy/use-update-layout-effect': 0.2.10_react@18.2.0
+      '@pansy/use-watermark': 0.3.1_react@18.2.0
+      '@pansy/use-web-socket': 0.2.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: false
+
+  /@pansy/shared/1.9.0:
+    resolution: {integrity: sha512-5EYtRR5IPBIocSiSRec5vBJ0v2WT6P3EAdhP03/jLAqaq8C2AXzjLJxiztzMd+bH7rqQaJZi56MSCylIujyzCw==}
+    dependencies:
+      lodash: 4.17.21
+    dev: false
+
+  /@pansy/use-boolean/0.3.0_react@18.2.0:
+    resolution: {integrity: sha512-JrM3i982O0swv7L0el+oljMf+DqLKQVybgWtSGzBmvSDNt1FgOGKwBtXfISYLcvapHElb88fLXZTxCdL7cRsvw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-toggle': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-click-away/0.4.0_react@18.2.0:
+    resolution: {integrity: sha512-uWoFg/Be+U0P8sjH1Z1CyXFLpIgKuLPagpeGs5J14NdFfj/IeybPAPojxIJgx5rdErCwMr1NMTCB1nC9ODFTUQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-controllable-value/0.4.0_react@18.2.0:
+    resolution: {integrity: sha512-Pj/9/XDDV+WRYKMVmmBvBZMlsPeI12q3bk/5mS1PSp7TmuYdMQkhJnovW8XhF4jgkWnFTzHCyln0fMuY6PupGg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@pansy/use-update': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-cookie-state/0.2.1_react@18.2.0:
+    resolution: {integrity: sha512-5NrllgBxxfnMbSp7fqT6j/wbwJp2q+Zg6eZvIRekFLQci7VjD2wirwkUlIdETpZ4JuzwQwVr29Eq1KUQFV00UQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@types/js-cookie': 2.2.7
+      js-cookie: 2.2.1
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-creation/0.2.1_react@18.2.0:
+    resolution: {integrity: sha512-/RIELje9LgTQSj7msNkkH9lplW0pYweBh6DZCcYSnH3oI8Ne4ZH5ZCxT39k5AAVFg279LRl9UEkO8uQdpn51mQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-deep-compare-effect/1.3.1_react@18.2.0:
+    resolution: {integrity: sha512-FYiFdEmr7L+AZAUV4FPX+UjlU8rqndGe0HeJD1HUla7mSLjVddJV59+48kTpYdR2ccVMwy7EBtcZ/1jp8TTWXg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-deep-compare-layout-effect/1.1.0_react@18.2.0:
+    resolution: {integrity: sha512-ggwRRfiNTln35NXahi3G8O+S0YCgfBk9e+157TRkq7ZsYeB1T2YPiMi4osT8V8NzG4E59JzYBO6ar1ZLXuw7Yw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-document-visibility/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-9K1um5Re7Y4P7G1EwPEVBAFBZmX0liLOsUReJkj5TpaEzdkZUzsaJCLqh5kQ5+t/vXFrtiFGzJyGlaF7U+XHjg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-event-listener': 0.3.1_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-event-listener/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-N9RLQcGf1hBbketgfUc5nfMDtBglmXnR804N2AnH90+Q1wDET3ZaqTOZVHNAvTJArjKfcd1Ir2FG+RFTj4CmCA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-event-target/0.2.6_react@18.2.0:
+    resolution: {integrity: sha512-9zUnz499qfJOFRxvV7XdVnitV473z1XaynA9vWqD0BT8m6UF2DevSyCRxP1H39WRg3vt+oQJxvRHcfpebDCTlQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-external/0.1.5_react@18.2.0:
+    resolution: {integrity: sha512-tdSeoNWbOEfSVBFNX/GyO9gOVKHmEa0v2lB8PztsDk9squZpdV5JHUZQQm7fN/L/9br2wvCRmZr6Sq63OxV4bg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-favicon/0.2.5_react@18.2.0:
+    resolution: {integrity: sha512-Zoexd1W48xciQbNJwXKOPSH/PRWoMqCFp+WCmGM3mxcnMyaVIHt/5vpWAIis0zNnOUJ1c7QqeLC4gSE95nGRBg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-get-state/0.3.0_react@18.2.0:
+    resolution: {integrity: sha512-hpmcG3SjRPWWhXBM3xKofaZJdnmEDQzzcXh0NLZJiOC7T39TWePq1vwFzgS3I1/sPyGmZBOisFU+Ig+VDhjnCA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-toggle': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-hover/0.4.0_react@18.2.0:
+    resolution: {integrity: sha512-ZAJObVV2UqvHu/WiraJaRmlMHleMT79JYjOJIoCmA32qUg8Kp+AdpW4ZeHJZlVll6dLV0S3mnQIGMPPdD+Wv0Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-boolean': 0.3.0_react@18.2.0
+      '@pansy/use-event-listener': 0.3.1_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-in-viewport/0.4.0_react@18.2.0:
+    resolution: {integrity: sha512-QheZ+DN7vtDZo+oK9pw8jriInzAfBvFirYZHWU2z1qx9mFnuIlsvx/XQQB/36j+XwOyBxRNso1GUFgYXw7z+Yg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      intersection-observer: 0.12.2
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-interval/0.3.0_react@18.2.0:
+    resolution: {integrity: sha512-TWhrWO4uIuD6NaAX4YyDSK6jUU7N8aY9xUoEPinLgpQXOEGesWMx0zG+s7OvgRmYiyQRQg8E7ddm+41ZgCIiug==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-key-press/0.3.0_react@18.2.0:
+    resolution: {integrity: sha512-Sf989CeVGjwfgLajgOwMecmJRtr7zTIQl+RTbzpNCt+YFEQhByho8gFUfaAJKC375wbfc6ZVgpyGzXTVFY1png==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-latest/0.2.5_react@18.2.0:
+    resolution: {integrity: sha512-ZHX0bmUNPzUQQbTMe7w/IpJai23U3g/MIJzNzyPQ8oEYvQP8kdAbWuTpkz/83Q5i7bFGS4pDl77aLa5dx9B9nw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-local-storage-state/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-jMhcwvruB7xQ9219ef8fNj59ZJlxnDUTBccvDxp7xcfj1yIk7hK1O/dfYjU3FUDfNfnAJO4es8CJTUnjGye34Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-lock-fn/1.0.6_react@18.2.0:
+    resolution: {integrity: sha512-JkZbe7ISjBIJYgihrqJu4mb7TH15LbpahiPAL1PVho42XrnXA6a/ZHnYe5rcPdeI3gmRfwqS+HNfAGGS1DfjhQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-memoized-fn/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-dny2ieTw1XLt4ZjHUftnW0kP50kNliSqZ4ZWzfVqQh74KPbLMHFLkwcyHgvVvJpsHimjYt2z1jVyXpnZwtyABg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-toggle': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-modal/1.0.1_react@18.2.0:
+    resolution: {integrity: sha512-rTavC3/3Pnfvmhkr/9dMxyQc5x5Zp+yriEtXgTDTio0duQASQHRLJBU+0t0x883NN8pk1bqdH0g3vQppumxXEw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-boolean': 0.3.0_react@18.2.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-mount/0.2.0_react@18.2.0:
+    resolution: {integrity: sha512-no4tgva5XLbNYpVS7imaMbd2hMaxxoysBF61UQ5JmFIgvFgpOWB3ion/khK6RYvsSr/k65IT7rl58/fqgGC7Kg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-mouse/0.3.0_react@18.2.0:
+    resolution: {integrity: sha512-VveFdaFyO9IHQqU8skd9UsP2a2GvTZfQX8RlsRP9q+XP9B+KG5nU0Sfy9UDuPKFye3PaNJw+NqodxjW/LRBGdA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-event-listener': 0.3.1_react@18.2.0
+      '@pansy/use-raf-state': 0.2.6_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-mqtt/0.4.0_react@18.2.0:
+    resolution: {integrity: sha512-vWl3Z46oyLixoZIar8eQPwhWnNfoOLSTOCBkXs+r1zm6LsY3qK8vJ/nmPBbJsCpvRqVgs3NPq2G+ZWbiafUCYA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-boolean': 0.3.0_react@18.2.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      mqtt: 4.3.7
+      react: 18.2.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: false
+
+  /@pansy/use-portal/0.2.1_react@18.2.0:
+    resolution: {integrity: sha512-DdQLHxVbYsQP0iOlV09G2QlvQv47tr81NUBaPWesT1E8+/C2LeRUg8+WSf9JIzph3rBOxzx1FENpvy7gp33frw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-previous/0.2.5_react@18.2.0:
+    resolution: {integrity: sha512-EiIU6IfzhzeE3ySBe0Q3ekbktlfb20/Sc/fpFi2Z+GZ1XTU0+oBDU06eL9E7PNuh3Eo1Bmj0ds/6NNt6159ikg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-raf-state/0.2.6_react@18.2.0:
+    resolution: {integrity: sha512-ay+h5TqD5/sWnb6NCTFzB3cPJgbFWbXMSm7Wq0S/pn+qjrzKh1T407Ghel8QPL3aAiMNmV6V2J+Riitk4prYyA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-request/0.3.0_react@18.2.0:
+    resolution: {integrity: sha512-qpsi6g5jVr+hTqqccoPWBmA5t5eDE4e33f+43i/gJLt0a7d07CDAkkKUOZpvi8l1c5ym9ViFhqsiXv+v0DGPKQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-creation': 0.2.1_react@18.2.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@pansy/use-mount': 0.2.0_react@18.2.0
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      '@pansy/use-update': 0.2.5_react@18.2.0
+      lodash: 4.17.21
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-scroll-lock/1.3.0_react@18.2.0:
+    resolution: {integrity: sha512-XKDC7bXxGr8gOzyM0Z8SmS84EY6HsSrLFdWqlXbC/PMJs5TGNBJJ392HRN1ExqeElDFy6XuYi++A+I9N+F2qjQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-event-listener': 0.3.1_react@18.2.0
+      '@pansy/use-get-state': 0.3.0_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-scroll/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-2HOYFbKBFEsG7fVp5k0bG9nHMdnsDKw3jKEQSYh2HW1fLFNDpgbKRO4jbkYg0T8tUP2MsbVOlwr6nX5c8InLbA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      '@pansy/use-raf-state': 0.2.6_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-selections/0.4.0_react@18.2.0:
+    resolution: {integrity: sha512-IQUL+K3Lf9ZWPMLu0hT+6bOnlHMi39fIvCUD89yj9HS4G+bWOoZt2d+DTL64bdecOK41C9dgbV7fh757PaH2zg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-session-storage-state/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-+8ZA+/MAcKVN21kPOTrei1KgjBg51oZ+Q0HSDNMrmnxmlg2lBKvDhQRpx6/bBbqMRhRMts8KniHXZRqWCqOIcQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-size/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-+lQiGFPLj6Hse5L4/YcXam4spyeo1R26ZY6W3xmQv9UElyq8Fk2GyJefCwFZm4fvT2q5E9GbSdpgJbKMVtyddw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-raf-state': 0.2.6_react@18.2.0
+      react: 18.2.0
+      resize-observer-polyfill: 1.5.1
+    dev: false
+
+  /@pansy/use-timeout/0.2.6_react@18.2.0:
+    resolution: {integrity: sha512-QaVXs08Mt/0IlwJ8BPX9FzUfID2A8N/ryVcKglRVKCxbOqA0uANp8/czjbjTEyN59KjNpCMBlenROhmB2vZ2pA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-title/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-gj2399FBAMaT0rIWbfMJIusc6QLUyGx63o9xnkYV4kep62nkaK6Rx4nKkvGMOSzOfoAC1CHzCd6jRoiZwYp2Hw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-toggle/0.2.5_react@18.2.0:
+    resolution: {integrity: sha512-/MAxlTC2TsdaqxbsVCVwpcsW48TdBDKSHzAvxsJwyr6EE1AbnIG+Eq+Hsk0uwj4C360lbms24J5Mh2G8xflBbQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-unmount/0.2.6_react@18.2.0:
+    resolution: {integrity: sha512-3B3f3HxcGS9kEHYzl0ONNwVNHhaT6poajSladGFabzQRt7gcKYRjkjLvoVd6NL1AB+5/uTcL3dj3rFQOEU1HHw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/shared': 1.9.0
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-update-effect/0.2.5_react@18.2.0:
+    resolution: {integrity: sha512-nNVkmreNfVAw7FgusmkUT3QMIOqtD7Yyc45JRj4lR4OmST1lgefsfuGTStg+x9VouJh+jiZFRdlz4m4/tQW2jg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-update-layout-effect/0.2.10_react@18.2.0:
+    resolution: {integrity: sha512-7Zi30oSY8N7KToeRoVrKegjMp4+xrDIuUmijB4T2oB5pi6ueX10IFkPHivyaUG1QtliBWdu4P5j12F51zPcGBA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-update/0.2.5_react@18.2.0:
+    resolution: {integrity: sha512-Sz2DWAa4g2ghkjRPcTYl74LDo/zYyOePbuaiNexc6NwYYctWEghAsKhCyGzL6K05KDSrgLlLJNUEO9Mt7uBgog==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-watermark/0.3.1_react@18.2.0:
+    resolution: {integrity: sha512-sjNCPlC73LfoUOF1DgCiL1MkkEaS2Zsco3UZs+rwCJ7vYHlmoV2iZr0aszUBtEHpS6HIU7j2/MFPzp76mTEBaw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/hook-utils': 0.5.0_react@18.2.0
+      '@pansy/shared': 1.9.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      '@pansy/watermark': 2.3.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/use-web-socket/0.2.0_react@18.2.0:
+    resolution: {integrity: sha512-tglPRsYxUePKC+vs38kZR0IsdwlajHvDJy55zkZyZbdcEic7YHF1wCs9KA1gLir0MaJgW6ULR3pouzVvJ3Nhlw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@pansy/use-latest': 0.2.5_react@18.2.0
+      '@pansy/use-memoized-fn': 0.3.1_react@18.2.0
+      '@pansy/use-unmount': 0.2.6_react@18.2.0
+      react: 18.2.0
+    dev: false
+
+  /@pansy/watermark/2.3.0:
+    resolution: {integrity: sha512-eVq5XD0BGkAkp0I36WgupRJOnEf+d3mJzy4HJUOUx4XzpZAk6fCRu1OKodTx+64FegEhfAMr7QpbUMTmdXrDPQ==}
     dev: false
 
   /@parcel/css-darwin-arm64/1.9.0:
@@ -3084,6 +3599,10 @@ packages:
     resolution: {integrity: sha512-c3mAZEuK0lvBp8tmuL74XRKn1+y2dcwOUpH7x4WrF6gk1GIgiluDRgMYQtw2OFcBvAJWlt6ASU3tSqxp0Uu0Aw==}
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
+    dev: false
+
+  /@types/js-cookie/2.2.7:
+    resolution: {integrity: sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==}
     dev: false
 
   /@types/json-schema/7.0.11:
@@ -4285,6 +4804,14 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /bl/4.1.0:
+    resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
+    dependencies:
+      buffer: 5.7.1
+      inherits: 2.0.4
+      readable-stream: 3.6.0
+    dev: false
+
   /bn.js/4.12.0:
     resolution: {integrity: sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==}
     dev: false
@@ -4401,6 +4928,13 @@ packages:
       base64-js: 1.5.1
       ieee754: 1.2.1
       isarray: 1.0.0
+    dev: false
+
+  /buffer/5.7.1:
+    resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
+    dependencies:
+      base64-js: 1.5.1
+      ieee754: 1.2.1
     dev: false
 
   /builtin-status-codes/3.0.0:
@@ -4589,6 +5123,13 @@ packages:
     engines: {node: '>= 12'}
     dev: false
 
+  /commist/1.1.0:
+    resolution: {integrity: sha512-rraC8NXWOEjhADbZe9QBNzLAN5Q3fsTPQtBV+fEVj6xKIgDgNiEVE6ZNfHpZOqfQ21YUzfVNUXLOEZquYvQPPg==}
+    dependencies:
+      leven: 2.1.0
+      minimist: 1.2.7
+    dev: false
+
   /common-path-prefix/3.0.0:
     resolution: {integrity: sha512-QE33hToZseCH3jS0qN96O/bSh3kaw/h+Tq7ngyY9eWDUnTlTNUyqfqvCXioLe5Na5jFsL78ra/wuBU4iuEgd4w==}
     dev: false
@@ -4603,6 +5144,16 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    dev: false
+
+  /concat-stream/2.0.0:
+    resolution: {integrity: sha512-MWufYdFw53ccGjCA+Ol7XJYpAlW6/prSMzuPOTRnJGcGzuhLn4Scrz7qf6o8bROZ514ltazcIFJZevcfbo0x7A==}
+    engines: {'0': node >= 6.0}
+    dependencies:
+      buffer-from: 1.1.2
+      inherits: 2.0.4
+      readable-stream: 3.6.0
+      typedarray: 0.0.6
     dev: false
 
   /console-browserify/1.2.0:
@@ -6200,6 +6751,13 @@ packages:
     hasBin: true
     dev: false
 
+  /help-me/3.0.0:
+    resolution: {integrity: sha512-hx73jClhyk910sidBB7ERlnhMlFsJJIBqSVMFDwPN8o2v9nmp5KgLq1Xz1Bf1fCMMZ6mPrX159iG0VLy/fPMtQ==}
+    dependencies:
+      glob: 7.2.3
+      readable-stream: 3.6.0
+    dev: false
+
   /history/5.3.0:
     resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
     dependencies:
@@ -6406,6 +6964,10 @@ packages:
       get-intrinsic: 1.1.3
       has: 1.0.3
       side-channel: 1.0.4
+    dev: false
+
+  /intersection-observer/0.12.2:
+    resolution: {integrity: sha512-7m1vEcPCxXYI8HqnL8CKI6siDyD+eIWSwgB3DZA+ZTogxk9I4CDnj4wilt9x/+/QbHI4YG5YZNmC6458/e9Ktg==}
     dev: false
 
   /intl-format-cache/4.3.1:
@@ -6790,6 +7352,10 @@ packages:
       supports-color: 8.1.1
     dev: false
 
+  /js-cookie/2.2.1:
+    resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
+    dev: false
+
   /js-sdsl/4.1.4:
     resolution: {integrity: sha512-Y2/yD55y5jteOAmY50JbUZYwk3CP3wnLPEZnlR1w9oKhITrBEtAxwuWKebFf8hMrPMgbYwFoWK/lH2sBkErELw==}
     dev: false
@@ -6899,6 +7465,11 @@ packages:
       source-map: 0.6.1
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /leven/2.1.0:
+    resolution: {integrity: sha512-nvVPLpIHUxCUoRLrFqTgSxXJ614d8AgQoWl7zPe/2VadE8+1dpU3LBhowRuBAcuwruWtOdD8oYC9jDNJjXDPyA==}
+    engines: {node: '>=0.10.0'}
     dev: false
 
   /levn/0.4.1:
@@ -7162,8 +7733,50 @@ packages:
       kind-of: 6.0.3
     dev: false
 
+  /minimist/1.2.7:
+    resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
+    dev: false
+
   /moment/2.29.4:
     resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
+    dev: false
+
+  /mqtt-packet/6.10.0:
+    resolution: {integrity: sha512-ja8+mFKIHdB1Tpl6vac+sktqy3gA8t9Mduom1BA75cI+R9AHnZOiaBQwpGiWnaVJLDGRdNhQmFaAqd7tkKSMGA==}
+    dependencies:
+      bl: 4.1.0
+      debug: 4.3.4
+      process-nextick-args: 2.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /mqtt/4.3.7:
+    resolution: {integrity: sha512-ew3qwG/TJRorTz47eW46vZ5oBw5MEYbQZVaEji44j5lAUSQSqIEoul7Kua/BatBW0H0kKQcC9kwUHa1qzaWHSw==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    dependencies:
+      commist: 1.1.0
+      concat-stream: 2.0.0
+      debug: 4.3.4
+      duplexify: 4.1.2
+      help-me: 3.0.0
+      inherits: 2.0.4
+      lru-cache: 6.0.0
+      minimist: 1.2.7
+      mqtt-packet: 6.10.0
+      number-allocator: 1.0.12
+      pump: 3.0.0
+      readable-stream: 3.6.0
+      reinterval: 1.1.0
+      rfdc: 1.3.0
+      split2: 3.2.2
+      ws: 7.5.9
+      xtend: 4.0.2
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
     dev: false
 
   /ms/2.1.2:
@@ -7312,6 +7925,15 @@ packages:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
     dependencies:
       boolbase: 1.0.0
+    dev: false
+
+  /number-allocator/1.0.12:
+    resolution: {integrity: sha512-sGB0qoQGmKimery9JubBQ9pQUr1V/LixJAk3Ygp7obZf6mpSXime8d7XHEobbIimkdZpgjkNlLt6G7LPEWFYWg==}
+    dependencies:
+      debug: 4.3.4
+      js-sdsl: 4.1.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /object-assign/4.1.1:
@@ -8428,6 +9050,13 @@ packages:
       parse-asn1: 5.1.6
       randombytes: 2.1.0
       safe-buffer: 5.2.1
+    dev: false
+
+  /pump/3.0.0:
+    resolution: {integrity: sha512-LwZy+p3SFs1Pytd/jYct4wpv49HiYCqd9Rlc5ZVdk0V+8Yzv6jR5Blk3TRmPL1ft69TxP0IMZGJ+WPFU2BFhww==}
+    dependencies:
+      end-of-stream: 1.4.4
+      once: 1.4.0
     dev: false
 
   /punycode/1.3.2:
@@ -9613,6 +10242,10 @@ packages:
       jsesc: 0.5.0
     dev: false
 
+  /reinterval/1.1.0:
+    resolution: {integrity: sha512-QIRet3SYrGp0HUHO88jVskiG6seqUGC5iAG7AwI/BV4ypGcuqk9Du6YQBUOUqm9c8pw1eyLoIaONifRua1lsEQ==}
+    dev: false
+
   /relateurl/0.2.7:
     resolution: {integrity: sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==}
     engines: {node: '>= 0.10'}
@@ -9677,6 +10310,10 @@ packages:
   /reusify/1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+    dev: false
+
+  /rfdc/1.3.0:
+    resolution: {integrity: sha512-V2hovdzFbOi77/WajaSMXk2OLm+xNIeQdMMuB7icj7bk6zi2F8GGAxigcnDFpJHbNyNcgyJDiP+8nOrY5cZGrA==}
     dev: false
 
   /rimraf/3.0.2:
@@ -9980,6 +10617,12 @@ packages:
   /split-on-first/1.1.0:
     resolution: {integrity: sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw==}
     engines: {node: '>=6'}
+    dev: false
+
+  /split2/3.2.2:
+    resolution: {integrity: sha512-9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJwObb6jnLFNGB7Qm73V5HewTROPyxD0C29xqmaI68bQtV+hg==}
+    dependencies:
+      readable-stream: 3.6.0
     dev: false
 
   /split2/4.1.0:
@@ -10448,6 +11091,10 @@ packages:
     resolution: {integrity: sha512-dzlvlNlt6AXU7EBSfpAscydQ7gXB+pPGsPnfJnZpiNJBDj7IaJzQlBZYGdEi4R9HmPdBv2XmWJ6YUtoTa7lmCw==}
     dev: false
 
+  /typedarray/0.0.6:
+    resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
+    dev: false
+
   /umi/4.0.46_5ntolhgvaqg7zl7lkejg5kulgq:
     resolution: {integrity: sha512-boFmOlbv/9+T8MsvGuCzkTNkuPACdZN4IREX73+3W1pmuLU/B/tqm4GF0PGR5sZT8qOW/b7BPEdmn13jGGMP2w==}
     engines: {node: '>=14'}
@@ -10827,6 +11474,19 @@ packages:
     dependencies:
       imurmurhash: 0.1.4
       signal-exit: 3.0.7
+    dev: false
+
+  /ws/7.5.9:
+    resolution: {integrity: sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==}
+    engines: {node: '>=8.3.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
     dev: false
 
   /xtend/4.0.2:
