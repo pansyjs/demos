@@ -1,0 +1,19 @@
+{
+  "name": "launcher",
+  "version": "1.0.0",
+  "description": "基座项目",
+  "scripts": {
+    "start": "umi dev"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "lodash": "4.17.21",
+    "umi": "3.5.36"
+  },
+  "devDependencies": {
+    "@umijs/preset-react": "2.1.6",
+    "@umijs/plugin-qiankun": "2.42.0",
+    "qiankun": "2.9.1"
+  }
+}
